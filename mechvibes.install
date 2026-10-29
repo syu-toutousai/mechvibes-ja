@@ -1,0 +1,18 @@
+post_install() {
+  gtk-update-icon-cache -q -t -f usr/share/icons/hicolor 2>/dev/null || true
+  update-mime-database usr/share/mime 2>/dev/null || true
+  update-desktop-database -q usr/share/applications 2>/dev/null || true
+
+  # 旧 AUR 版と同じ配置。パッケージ所有にはしない（アップグレード時の衝突回避）。
+  ln -sf /opt/Mechvibes/mechvibes /usr/bin/mechvibes
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  rm -f /usr/bin/mechvibes
+  gtk-update-icon-cache -q -t -f usr/share/icons/hicolor 2>/dev/null || true
+  update-desktop-database -q usr/share/applications 2>/dev/null || true
+}

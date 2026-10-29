@@ -1,0 +1,15 @@
+pkg/
+src/
+*.pkg.tar.zst
+*.pkg.tar.xz
+*.deb
+mechvibes-ja.db
+mechvibes-ja.db.*
+mechvibes-ja.files
+mechvibes-ja.files.*
+mechvibes-ja.sha256
+ja-work/
+check-extract/
+verify/
+verify-asar/
+repo/

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Mechvibes
+Name[ja]=Mechvibes 日本語版
+GenericName=キーボード打鍵音
+GenericName[ja]=キーボード打鍵音
+Comment=メカニカルキーボードの打鍵音を再生します
+Comment[ja]=メカニカルキーボードの打鍵音を再生します
+Keywords=keyboard;sound;typing;
+Keywords[ja]=キーボード;打鍵音;タイピング;
+Exec=/opt/Mechvibes/mechvibes %U
+Terminal=false
+Type=Application
+Icon=mechvibes
+StartupWMClass=Mechvibes
+Categories=Utility;
